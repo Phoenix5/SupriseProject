@@ -1,0 +1,92 @@
+﻿@model IEnumerable<InterviewSelectionProcess.Models.CandidateStatu>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@using (Html.BeginForm())
+{
+    <p>
+        Post: @Html.TextBox("SearchPost")
+        Tech: @Html.TextBox("SearchTech")
+        Experience: @Html.TextBox("SearchExperience",null,null,new { @type = "number" ,@min = "0", @max = "20" })@*Html.NumericInputFor(model => model.Foo, min:0, max:100)*@
+        <input type="submit" value="Filter" />
+    </p>
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Candidate.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewStatu.InterviewStatusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectionStatu.SelectionStatusName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Candidate.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewStatu.InterviewStatusName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SelectionStatu.SelectionStatusName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CandidateStatusID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CandidateStatusID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CandidateStatusID })
+        </td>
+    </tr>
+}
+
+</table>
+
+@Html.ActionLink("Schedule Interviews", "Create", "InterviewSchedules")
+
+@using (Html.BeginForm("Create", "InterviewSchedules",FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.Label("DateOfBirth", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Editor("InterviewDate", new { htmlAttributes = new { @type = "date", @class = "form-control" } })
+                @Html.ValidationMessage("DateOfBirth", "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <input type="submit" value="GO" />
+
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#InterviewDate").blur(function () {
+            $(this).val(function(i,v){
+                //alert(v);
+               // alert($.datepicker.formatDate('yy-mm-dd', new Date()));
+                var da = $.datepicker.formatDate('yy-mm-dd', new Date());
+                return v>da?v:da;
+            });
+
+             
+        });
+
+    });
+
+</script>
