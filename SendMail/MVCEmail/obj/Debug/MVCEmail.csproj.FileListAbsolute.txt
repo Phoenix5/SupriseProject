@@ -1,0 +1,105 @@
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\ApplicationInsights.config
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\csc.exe
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\System.Collections.Immutable.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\System.Reflection.Metadata.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\vbc.exe
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\VBCSCompiler.exe
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\roslyn\VBCSCompiler.exe.config
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\MVCEmail.dll.config
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\MVCEmail.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\MVCEmail.pdb
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Antlr3.Runtime.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.Agent.Intercept.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.DependencyCollector.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.Web.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.WindowsServer.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.ApplicationInsights.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.Web.Infrastructure.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Newtonsoft.Json.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Helpers.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Mvc.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Optimization.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Razor.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.Deployment.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.Razor.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\WebGrease.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.DependencyCollector.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.Web.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.AI.WindowsServer.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.ApplicationInsights.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Helpers.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Mvc.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Optimization.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.Razor.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.Deployment.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\System.Web.WebPages.Razor.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Antlr3.Runtime.pdb
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\bin\Newtonsoft.Json.xml
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\obj\Debug\MVCEmail.dll
+c:\Users\prathamesh.mashelkar\documents\visual studio 2015\Projects\SendMail\MVCEmail\obj\Debug\MVCEmail.pdb
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\ApplicationInsights.config
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\csc.exe
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\vbc.exe
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\VBCSCompiler.exe
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\MVCEmail.dll.config
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\MVCEmail.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\MVCEmail.pdb
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Antlr3.Runtime.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.Web.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.ApplicationInsights.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Newtonsoft.Json.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Helpers.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Mvc.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Optimization.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Razor.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.Deployment.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.Razor.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\WebGrease.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.Web.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.ApplicationInsights.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Helpers.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Mvc.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Optimization.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.Razor.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.Deployment.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\System.Web.WebPages.Razor.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Antlr3.Runtime.pdb
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\bin\Newtonsoft.Json.xml
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\obj\Debug\MVCEmail.dll
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\obj\Debug\MVCEmail.pdb
+C:\Users\prathamesh.mashelkar\Documents\GitHub\SupriseProject\SendMail\MVCEmail\obj\Debug\MVCEmail.csprojResolveAssemblyReference.cache
