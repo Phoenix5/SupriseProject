@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Interview.Domain.Model.CandidateStatu>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+
+<h2 class="h2">Admin Page</h2>
+<div class="row">
+    <div class="btn btn-group col-sm-7">
+            @*@Html.ActionLink("Set Status", "Create","CandidateStatus", new { @class = "btn btn-default" })*@
+        <p class="btn btn-default"> @Html.ActionLink("View Candidates", "Index", "Candidates")</p>
+        <p class="btn btn-default"> @Html.ActionLink("View Interviews", "Index", "InterviewSchedules")</p>
+    </div>
+    <div class="col-sm-5">
+        @*<h3 class="h3">Schedule Interview </h3>*@
+        @using (Html.BeginForm("Create", "InterviewSchedules", FormMethod.Get, new { @class = "form-inline" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                @Html.Label("Schedule Interview:", htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-5">
+                    @Html.Editor("InterviewDate", new { htmlAttributes = new { @type = "date", @class = "form-control" } })
+                    @Html.ValidationMessage("InterviewDate", "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" value="GO" class="btn btn-primary " />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<hr/>
+@using (Html.BeginForm("Index","CandidateStatus",FormMethod.Post,new { @class="form-inline" }))
+{
+    <p>
+        Post: @Html.TextBox("SearchPost", null, null, new { @class = "form-control" ,data_autocomplete=Url.Action("AutoComplete")})
+        Tech: @Html.TextBox("SearchTech", null, null, new { @class = "form-control", data_autocomplete = Url.Action("AutoCompleteTech") })
+        Experience: @Html.TextBox("SearchExperience",null,null,new { @type = "number" ,@min = "0", @max = "20",@class="form-control", data_autocomplete = Url.Action("AutoCompleteExp") })@*Html.NumericInputFor(model => model.Foo, min:0, max:100)*@
+        <input type="submit" value="Filter" class="btn btn-primary"/>
+    </p>
+}
+
+
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            Full Name
+            @*@Html.DisplayNameFor(model => model.Candidate.FirstName)*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewStatu.InterviewStatusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelectionStatu.SelectionStatusName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="col-sm-4">
+            @Html.DisplayFor(modelItem => item.Candidate.FirstName)   @Html.DisplayFor(modelItem => item.Candidate.MiddleName)   @Html.DisplayFor(modelItem => item.Candidate.LastName)
+        </td>
+        <td class="col-sm-2">
+            @Html.DisplayFor(modelItem => item.InterviewStatu.InterviewStatusName)
+        </td>
+        <td class="col-sm-2">
+            @Html.DisplayFor(modelItem => item.SelectionStatu.SelectionStatusName)
+        </td>
+        <td class="btn-group col-sm-4">
+
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.CandidateStatusID },new { @class = "btn btn-default" })*@
+            @Html.ActionLink("Details", "Details", new { id=item.CandidateStatusID}, new { @class = "btn btn-default" })
+            @Html.ActionLink("Delete", "Delete", new { id=item.CandidateStatusID}, new { @class = "btn btn-default" })
+            @Html.ActionLink("Set Status", "Create", new { CandidateID = item.CandidateID }, new { @class = "btn btn-default" })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+
+<div class="btn btn-default">
+    @Html.ActionLink("Back", "Index", "Home")
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#InterviewDate").blur(function () {
+            $(this).val(function(i,v){
+                var da = $.datepicker.formatDate('yy-mm-dd', new Date());
+                return v>da?v:da;
+            });
+
+             
+        });
+
+    });
+
+    var CreateAutocomplete = function () {
+        var $input = $(this);
+        var options = {
+            source: $input.attr("data-autocomplete")
+        };
+        $input.autocomplete(options);
+    };
+
+
+    $("input[data-autocomplete]").each(CreateAutocomplete);
+
+</script>

@@ -1,0 +1,68 @@
+﻿@model Interview.Domain.Model.InterviewSchedule
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>InterviewSchedule</h2>
+
+<div class="row" style="border-radius:10px 10px 10px 10px;border:1px solid #f8f5f5;background-color:#e9e5e5;padding: 10px">
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal col-md-3" style="border-radius: 30px 30px 30px 30px; border: 1px solid #ffffff; background-color: #c6c6c6; padding: 20px">
+        <h4>InterviewSchedule</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group col-md-12">
+            @Html.LabelFor(model => model.EmployeeID, "EmployeeID", htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                @Html.DropDownList("EmployeeID", null, htmlAttributes: new { @class = "form-control col-md-12" })
+                @Html.ValidationMessageFor(model => model.EmployeeID, "", new { @class = "text-danger col-md-12" })
+        </div>
+        <div class="form-group col-md-12">
+           
+            @Html.LabelFor(model => model.HRNote, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                @Html.EditorFor(model => model.HRNote, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HRNote, "", new { @class = "text-danger" })
+          
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.Note, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Note, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Note, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group col-md-12">
+           
+            @Html.LabelFor(model => model.InterviewDate, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                @Html.EditorFor(model => model.InterviewDate, new { htmlAttributes = new { @type = "date", @class = "form-control" , @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.InterviewDate, "", new { @class = "text-danger" })
+            
+        </div>
+
+        <div class="form-group col-md-12">
+          
+            @Html.LabelFor(model => model.CandidateID, "CandidateID", htmlAttributes: new { @class = "control-label col-md-12 badge" })<br/>
+                @Html.DropDownList("CandidateID", null, htmlAttributes: new { @class = "form-control col-md-12" })
+                @Html.ValidationMessageFor(model => model.CandidateID, "", new { @class = "text-danger" })
+            
+        </div>
+
+        <div class="form-group col-md-12">
+          
+                <input type="submit" value="Set Interview" class="btn btn-info col-md-12" />
+           
+        </div>
+    </div>
+}
+
+<div class="btn btn-default col-md-offset-10 col-md-2">
+    @Html.ActionLink("Back", "Index","CandidateStatus")
+</div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
