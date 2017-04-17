@@ -1,0 +1,76 @@
+﻿@model IEnumerable<InterviewSelectionProcess.Models.InterviewSchedule>
+
+@{
+    ViewBag.Title = "Interviews";
+}
+<h2>@ViewBag.Title.</h2>
+
+@foreach (var item in Model)
+{
+    <hr/>
+  <div> 
+      <p><b>Candidate Name:</b>
+       @item.Candidate.FirstName @item.Candidate.MiddleName @item.Candidate.LastName
+      </p> 
+      <p><b>Mobile no:</b>
+       @item.Candidate.MobileNumber
+      </p>
+      <p><b>Address:</b> 
+      @item.Candidate.Address
+      </p>
+      <p><b>EmailID:</b> 
+      @item.Candidate.EmailAddress
+      </p>
+      <p><b>Post applied for:</b>
+       @item.Candidate.Post.PostName
+      </p>
+      <p><b>Interview Scheduled on:</b>
+      @item.InterviewDate
+      </p>
+      <p><b>Note from the HR:</b> 
+      @item.HRNote
+      </p>
+      <p>
+          <b>Note from the HR:</b>
+          @{ 
+              ViewBag.x=item.Candidate.CandidateStatus.Select(y => y.InterviewStatus).Single();
+             
+          }
+          @item.Candidate.CandidateStatus.Select(x => x.InterviewStatus).Single()
+      </p>
+</div>
+
+
+    using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.Hidden("InterviewID", item.InterviewID)
+            @Html.Hidden("EmployeeID", item.EmployeeID)
+            @Html.Hidden("HRNote", item.HRNote)
+            @Html.Hidden("InterviewDate", item.InterviewDate)
+            @Html.Hidden("CandidateID", item.CandidateID)
+
+            <div class="form-group">
+                @Html.Label("Note", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4">
+                    @Html.DropDownList("InterviewStatus", new SelectList(ViewBag.candidatestatus, "InterviewStatusID", "InterviewStatusName", ViewBag.x), htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessage("InterviewID", "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-4">
+                    @*@Html.Editor("Note", new { htmlAttributes = new { @class = "form-control", cols = 35, @rows = 5, placeholder=item.Note} })*@
+                    <textarea placeholder="@item.Note" cols=5  rows=5 name="Note" class="form-control"></textarea>
+                    @Html.ValidationMessage(item.Note, "", new { @class = "text-danger" })
+                </div>
+          
+                <div class="col-md-2">
+                    <input type="submit" value="Feedback" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+}
