@@ -1,0 +1,123 @@
+﻿@model IPagedList<Interview.Domain.Model.CandidateStatu>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+
+<h2 class="h2">Admin Page</h2>
+<div class="row">
+    <div class="btn btn-group col-sm-7">
+            @*@Html.ActionLink("Set Status", "Create","CandidateStatus", new { @class = "btn btn-default" })*@
+          <div class = "btn btn-default">@Html.ActionLink("View Candidates", "Index", "Candidates") </div>
+           <div class = "btn btn-default">@Html.ActionLink("View Interviews", "Index", "InterviewSchedules") </div>
+    </div>
+    <div class="col-sm-5">
+        @*<h3 class="h3">Schedule Interview </h3>*@
+        @using (Html.BeginForm("Create", "InterviewSchedules", FormMethod.Get, new { @class = "form-inline" ,style = "border-radius:10px 10px 10px 10px;border:1px solid #f8f5f5;background-color:#e9e5e5;padding: 10px" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                @Html.Label("Schedule Interview:", htmlAttributes: new { @class = "control-label col-md-5" })
+                <div class="col-md-5">
+                    @Html.Editor("InterviewDate", new { htmlAttributes = new { @type = "date", @class = "form-control" } })
+                    @Html.ValidationMessage("InterviewDate", "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" value="GO" class="btn btn-info " />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<hr/>
+
+@using (Html.BeginForm("Index","CandidateStatus",FormMethod.Post,new { @class= "form-inline" , style = "border-radius:10px 10px 10px 10px;border:1px solid #f8f5f5;background-color:#e9e5e5;padding: 10px" }))
+{
+    <p>
+        Post: @Html.TextBox("SearchPost", null, null, new { @class = "form-control" ,data_autocomplete=Url.Action("AutoComplete")})
+        Tech: @Html.TextBox("SearchTech", null, null, new { @class = "form-control", data_autocomplete = Url.Action("AutoCompleteTech") })
+        Experience: @Html.TextBox("SearchExperience",null,null,new { @type = "number" ,@min = "0", @max = "20",@class="form-control", data_autocomplete = Url.Action("AutoCompleteExp") })@*Html.NumericInputFor(model => model.Foo, min:0, max:100)*@
+        <input type="submit" value="Filter" class="btn btn-info"/>
+    </p>
+}
+
+<div id="#CList" style="text-align:right">
+    <div class="pagedList" data-target="#CList">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.Classic)
+    </div>
+</div>
+<table class="table table-striped table-bordered table-hover"  style = "border-radius:10px 10px 10px 10px;border:1px solid #f8f5f5;background-color:#e9e5e5;padding: 10px" >
+    <tr>
+        <th>
+            Full Name
+            @*@Html.DisplayNameFor(model => model.Candidate.FirstName)*@
+        </th>
+        <th>
+            Interview Status
+            @*@Html.DisplayNameFor(model => model.InterviewStatu.InterviewStatusName)*@
+        </th>
+        <th>
+            Selection Status
+            @*@Html.DisplayNameFor(model => model.SelectionStatu.SelectionStatusName)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="col-sm-4">
+            @Html.DisplayFor(modelItem => item.Candidate.FirstName)   @Html.DisplayFor(modelItem => item.Candidate.MiddleName)   @Html.DisplayFor(modelItem => item.Candidate.LastName)
+        </td>
+        <td class="col-sm-2">
+            @Html.DisplayFor(modelItem => item.InterviewStatu.InterviewStatusName)
+        </td>
+        <td class="col-sm-2">
+            @Html.DisplayFor(modelItem => item.SelectionStatu.SelectionStatusName)
+        </td>
+        <td class="btn-group col-sm-4">
+
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.CandidateStatusID },new { @class = "btn btn-default" })*@
+            @Html.ActionLink("Details", "Details", new { id=item.CandidateStatusID}, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Delete", "Delete", new { id=item.CandidateStatusID}, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Set Status", "Create", new { CandidateID = item.CandidateID }, new { @class = "btn btn-info" })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+
+
+    @Html.ActionLink("Back", "Index", "Home", new { @class = "btn btn-info form-control" })
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#InterviewDate").blur(function () {
+            $(this).val(function(i,v){
+                var da = $.datepicker.formatDate('yy-mm-dd', new Date());
+                return v>da?v:da;
+            });
+
+             
+        });
+
+    });
+
+    var CreateAutocomplete = function () {
+        var $input = $(this);
+        var options = {
+            source: $input.attr("data-autocomplete")
+        };
+        $input.autocomplete(options);
+    };
+
+
+    $("input[data-autocomplete]").each(CreateAutocomplete);
+
+</script>

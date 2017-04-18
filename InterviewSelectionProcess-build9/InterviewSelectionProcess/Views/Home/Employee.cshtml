@@ -1,0 +1,28 @@
+﻿@model Interview.Domain.Model.Employee
+
+@{
+    ViewBag.Title = "Interviewer Login";
+}
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal row">
+        <div class="col-md-3" style="border-radius:30px 30px 30px 30px;border:1px solid #f8f5f5;background-color:#c6c6c6;padding: 10px">
+            <div class="form-group col-md-12">
+                @Html.LabelFor(model => model.EmployeeID, "EmployeeID", htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                <div class="col-md-12">
+                    @Html.DropDownList("EmployeeID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.EmployeeID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-12">
+                <div class="col-md-12">
+                    <input type="submit" value="GO" class="btn btn-info form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+}

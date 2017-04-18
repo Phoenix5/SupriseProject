@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Interview.Domain.Model.InterviewSchedule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p class="btn btn-default">
+    @Html.ActionLink("New Schedule", "Index","CandidateStatus")
+</p>
+<table class="table table-striped table-bordered table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Candidate.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HRNote)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InterviewDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Candidate.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HRNote)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Note)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InterviewDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.InterviewID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.InterviewID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.InterviewID })
+        </td>
+    </tr>
+}
+
+</table>
