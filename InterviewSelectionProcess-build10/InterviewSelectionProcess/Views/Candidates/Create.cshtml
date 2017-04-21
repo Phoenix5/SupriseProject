@@ -1,0 +1,139 @@
+﻿@model Interview.Domain.Model.Candidate
+
+@{
+    ViewBag.Title = "Create";
+}
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+
+
+@using (Html.BeginForm("Create", "Candidates", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-inline" style="border-radius:30px 30px 30px 30px;border:1px solid #f8f5f5;background-color:#c6c6c6;padding: 10px">
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+        <div class="row" style="border-radius: 30px 30px 30px 30px; border: 1px solid #ffffff; background-color: #e9e5e5; padding: 30px">
+            <div class="form-group col-md-12">
+                
+                    @Html.LabelFor(model => model.ApplicationUser.Email, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.DisplayFor(model => model.ApplicationUser.Email)
+                    @Html.ValidationMessageFor(model => model.ApplicationUser.Email, "", new { @class = "text-danger  col-md-12" })
+              
+            </div>
+        </div>
+      
+        <div class="row" style="border-radius:30px 30px 30px 30px;border:1px solid #ffffff;background-color:#e9e5e5;padding:30px">
+            <div class="form-group col-md-3">
+                
+                @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control col-md-12", placeholder = @Html.DisplayNameFor(m => m.FirstName) ,style="border-radius:30px 0 0 30px"} })
+                     @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger  col-md-12" })
+                
+            </div>
+
+            <div class="form-group col-md-3">
+                
+                @Html.LabelFor(model => model.MiddleName, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control col-md-12", placeholder = @Html.DisplayNameFor(m => m.MiddleName), style = "border-radius:0 0 0 0" } })
+                     @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger  col-md-12" })
+               
+            </div>
+
+            <div class="form-group col-md-3">
+              
+                <div>  @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-12 badge" })</div>
+                    @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control col-md-12", placeholder = @Html.DisplayNameFor(m => m.LastName), style = "border-radius:0 30px 30px 0" } })
+                    <div> @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })</div>
+               
+            </div>
+        </div>
+        <div class="row" style="border-radius:30px 30px 30px 30px;border:1px solid #ffffff;background-color:#e9e5e5;padding:30px">
+            <div class="col-md-3">
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.DateOfBirth, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                        @Html.EditorFor(model => model.DateOfBirth, new { htmlAttributes = new { @type = "date", @class = "form-control col-md-12", placeholder = @Html.DisplayNameFor(m => m.DateOfBirth), style = "border-radius:30px 0 0 0" } })
+                        @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "text-danger col-md-12" })
+                    </div>
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.MobileNumber, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                        @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "form-control col-md-12", placeholder = @Html.DisplayNameFor(m => m.MobileNumber), stringlenght = "10", style = "border-radius:0 0 0 30px" } })
+                        @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "text-danger col-md-12" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                        @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control", cols = 35, @rows = 5, placeholder = @Html.DisplayNameFor(m => m.Address), style = "border-radius:0 30px 30px 0" } })
+                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="border-radius:30px 30px 30px 30px;border:1px solid #ffffff;background-color:#e9e5e5;padding:30px">
+        
+            <div class="form-group col-md-3">
+                
+                    @Html.LabelFor(model => model.Experience, htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.EditorFor(model => model.Experience, new { htmlAttributes = new { @class = "form-control col-md-12", @min = "0", @max = "20", placeholder = @Html.DisplayNameFor(m => m.Experience), style = "border-radius:30px 0 0 30px" } })
+                    @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger col-md-12" })
+                
+            </div>
+
+            <div class="form-group col-md-3">
+               
+                    @Html.LabelFor(model => model.TechnologyID, "TechnologyID", htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.DropDownList("TechnologyID", null, htmlAttributes: new { @class = "form-control col-md-12", style = "border-radius:0 0 0 0" })
+                    @Html.ValidationMessageFor(model => model.TechnologyID, "", new { @class = "text-danger col-md-12" })
+              
+            </div>
+
+            <div class="form-group col-md-3">
+
+            
+                    @Html.LabelFor(model => model.PostID, "PostID", htmlAttributes: new { @class = "control-label col-md-12 badge" })
+                    @Html.DropDownList("PostID", null, htmlAttributes: new { @class = "form-control col-md-12", style = "border-radius:0 30px 30px 0" })
+                    @Html.ValidationMessageFor(model => model.PostID, "", new { @class = "text-danger col-md-12" })
+                
+            </div>
+        </div>
+
+        <div class="row" style="border-radius:30px 30px 30px 30px;border:1px solid #ffffff;background-color:#e9e5e5;padding:30px">
+            <div class="form-group col-md-12">
+
+                <div class="col-md-3">
+                    @Html.Label("file", htmlAttributes: new { @class = "control-label col-md-2 badge" })
+                    <input type="file" name="file" class="form-control" style="border-radius:30px 30px 30px 30px"/>
+                    @Html.ValidationMessage("CustomError")
+                </div>
+                <div class="col-md-2 col-md-offset-10">
+                    <input type="submit" value="Create" class="btn btn-info form-control" style="border-radius:30px 30px 30px 30px"/>
+                </div>
+            </div>
+        </div>
+  </div>
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#DateOfBirth").blur(function () {
+            $(this).val(function(i,v){
+                //alert(v);
+               // alert($.datepicker.formatDate('yy-mm-dd', new Date()));
+                var da = $.datepicker.formatDate('yy-mm-dd', new Date());
+                return v<da?v:da;
+            });
+         });
+      });
+   
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

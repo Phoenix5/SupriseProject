@@ -1,0 +1,62 @@
+﻿@model Interview.Domain.Model.CandidateStatus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CandidateStatu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InterviewStatus.InterviewStatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterviewStatus.InterviewStatusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SelectionStatus.SelectionStatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SelectionStatus.SelectionStatusName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.ApplicationUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.ApplicationUser.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.Address)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CandidateStatusID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
