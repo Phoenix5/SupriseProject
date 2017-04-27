@@ -1,0 +1,8 @@
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\bin\Debug\ConsoleUI.exe
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\bin\Debug\ConsoleUI.pdb
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\bin\Debug\log4net.dll
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\bin\Debug\log4net.xml
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\obj\Debug\ConsoleUI.exe
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\obj\Debug\ConsoleUI.pdb
+c:\users\prathamesh.mashelkar\documents\visual studio 2015\Projects\ConsoleUI\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
