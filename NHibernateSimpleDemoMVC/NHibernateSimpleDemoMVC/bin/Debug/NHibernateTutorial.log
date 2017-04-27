@@ -1,0 +1,1260 @@
+2017-03-16 17:16:28,803 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-03-16 17:16:28,837 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-03-16 17:16:28,842 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:29:27,527 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:29:27,568 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:29:27,574 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:31:25,339 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:31:25,371 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:31:25,375 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:31:25,401 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+
+2017-04-04 10:42:07,311 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:42:07,345 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:42:07,349 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:42:07,375 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+
+2017-04-04 10:42:26,654 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:42:52,190 - 
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = null 
+    WHERE
+        Post = @p0 
+        AND Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+2017-04-04 10:43:54,390 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:43:54,421 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:43:54,425 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:44:02,226 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:46:14,564 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:46:14,595 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:14,600 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:14,601 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:46:14,602 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:14,603 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:14,629 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+command 2:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 3 [Type: Int32 (0:0:0)]
+command 3:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 4 [Type: Int32 (0:0:0)]
+
+2017-04-04 10:46:23,742 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:46:47,066 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:46:47,100 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:47,104 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:47,105 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:46:47,107 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:47,108 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 10:46:52,513 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:54:34,093 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:54:34,125 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:54:34,129 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:54:34,130 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:54:34,132 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 10:54:34,133 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 10:54:48,942 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:55:08,825 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:55:08,857 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:55:08,861 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:55:08,862 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:55:08,864 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 10:55:08,866 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 10:55:08,892 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+command 2:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 3 [Type: Int32 (0:0:0)]
+command 3:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 4 [Type: Int32 (0:0:0)]
+
+2017-04-04 10:55:19,752 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:55:19,767 - 
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = null 
+    WHERE
+        Post = @p0 
+        AND Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+2017-04-04 10:56:52,604 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:56:52,635 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 10:56:52,640 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 10:56:52,645 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 10:56:52,646 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 10:56:52,647 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 10:56:57,870 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 10:56:57,898 - Batch commands:
+command 0:
+    DELETE 
+    FROM
+        dbo.Comment 
+    WHERE
+        Id = @p0;
+    @p0 = 1 [Type: Int32 (0:0:0)]
+
+2017-04-04 11:17:12,945 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:17:12,982 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 11:17:12,986 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 11:17:12,989 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:17:12,991 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 11:17:12,992 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 11:17:13,031 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+command 2:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 3 [Type: Int32 (0:0:0)]
+command 3:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 4 [Type: Int32 (0:0:0)]
+
+2017-04-04 11:17:31,088 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 11:17:31,103 - 
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = null 
+    WHERE
+        Post = @p0 
+        AND Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+2017-04-04 11:18:14,183 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:18:14,220 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 11:18:14,225 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 11:18:14,230 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:18:14,231 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 11:18:14,232 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 11:18:19,548 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 11:18:19,580 - Batch commands:
+command 0:
+    DELETE 
+    FROM
+        dbo.Comment 
+    WHERE
+        Id = @p0;
+    @p0 = 1 [Type: Int32 (0:0:0)]
+
+2017-04-04 11:18:56,600 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:18:56,626 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:18:56,680 - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing or set cascade action for the property to something that would make it autosave. Type: NHibernateSimpleDemoMVC.Comment, Entity: NHibernateSimpleDemoMVC.Comment
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionRecreateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2017-04-04 11:52:57,212 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:52:57,235 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:52:57,281 - Could not synchronize database state with session
+NHibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing or set cascade action for the property to something that would make it autosave. Type: NHibernateSimpleDemoMVC.Comment, Entity: NHibernateSimpleDemoMVC.Comment
+   at NHibernate.Engine.ForeignKeys.GetEntityIdentifierIfNotUnsaved(String entityName, Object entity, ISessionImplementor session)
+   at NHibernate.Type.EntityType.GetReferenceValue(Object value, ISessionImplementor session)
+   at NHibernate.Type.ManyToOneType.NullSafeSet(IDbCommand st, Object value, Int32 index, Boolean[] settable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.WriteElement(IDbCommand st, Object elt, Int32 i, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.PerformInsert(Object ownerId, IPersistentCollection collection, IExpectation expectation, Object entry, Int32 index, Boolean useBatch, Boolean callable, ISessionImplementor session)
+   at NHibernate.Persister.Collection.AbstractCollectionPersister.Recreate(IPersistentCollection collection, Object id, ISessionImplementor session)
+   at NHibernate.Action.CollectionRecreateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2017-04-04 11:55:27,155 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:55:27,188 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 11:55:27,193 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 11:55:27,194 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:55:27,198 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 11:55:27,200 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 11:55:27,226 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+command 2:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 3 [Type: Int32 (0:0:0)]
+command 3:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 4 [Type: Int32 (0:0:0)]
+
+2017-04-04 11:57:42,129 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 11:57:42,143 - 
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = null 
+    WHERE
+        Post = @p0 
+        AND Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+2017-04-04 11:59:50,595 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:59:50,627 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 11:59:50,631 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 11:59:50,636 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 11:59:50,640 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 11:59:50,641 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 11:59:50,667 - Batch commands:
+command 0:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+command 1:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 2 [Type: Int32 (0:0:0)]
+command 2:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 3 [Type: Int32 (0:0:0)]
+command 3:
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = @p0 
+    WHERE
+        Id = @p1;
+    @p0 = 2 [Type: Int32 (0:0:0)], @p1 = 4 [Type: Int32 (0:0:0)]
+
+2017-04-04 12:00:06,914 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 12:00:06,933 - 
+    UPDATE
+        dbo.Comment 
+    SET
+        Post = null 
+    WHERE
+        Post = @p0 
+        AND Id = @p1;
+    @p0 = 1 [Type: Int32 (0:0:0)], @p1 = 1 [Type: Int32 (0:0:0)]
+2017-04-04 12:00:06,944 - Batch commands:
+command 0:
+    DELETE 
+    FROM
+        dbo.Comment 
+    WHERE
+        Id = @p0;
+    @p0 = 1 [Type: Int32 (0:0:0)]
+
+2017-04-04 12:03:46,068 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 12:03:46,099 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 12:03:46,103 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 12:03:46,108 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 12:03:46,110 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 12:03:46,112 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 12:03:53,160 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 12:03:53,194 - Batch commands:
+command 0:
+    DELETE 
+    FROM
+        dbo.Comment 
+    WHERE
+        Id = @p0;
+    @p0 = 1 [Type: Int32 (0:0:0)]
+
+2017-04-04 14:40:49,288 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 14:40:49,326 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '1st comment' [Type: String (4000:0:0)]
+2017-04-04 14:40:49,331 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 1 [Type: Int32 (0:0:0)],
+    @p1 = '2nd comment' [Type: String (4000:0:0)]
+2017-04-04 14:40:49,337 - 
+    INSERT 
+    INTO
+        dbo.Post
+        DEFAULT 
+    VALUES
+        ;
+    select
+        SCOPE_IDENTITY()
+2017-04-04 14:40:49,338 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '3rd comment' [Type: String (4000:0:0)]
+2017-04-04 14:40:49,339 - 
+    INSERT 
+    INTO
+        dbo.Comment
+        (Post, Text) 
+    VALUES
+        (@p0, @p1);
+    select
+        SCOPE_IDENTITY();
+    @p0 = 2 [Type: Int32 (0:0:0)],
+    @p1 = '4th comment' [Type: String (4000:0:0)]
+2017-04-04 14:40:49,881 - 
+    select
+        post0_.Id as Id1_7_ 
+    from
+        dbo.Post post0_
+2017-04-04 14:40:49,911 - Batch commands:
+command 0:
+    DELETE 
+    FROM
+        dbo.Comment 
+    WHERE
+        Id = @p0;
+    @p0 = 1 [Type: Int32 (0:0:0)]
+

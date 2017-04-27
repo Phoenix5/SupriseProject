@@ -1,0 +1,96 @@
+<!Doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Github API</title>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+<div id="main" class="container center-block panel panel-default">
+    <div class="row form-group panel-heading">
+	<input type="text" name="username" id="username" placeholder="Github username..." class="form-control">
+    <button id="submitbtn" class="form-control btn btn-primary">Pull User Data</button>
+     </div>  
+	 <div class="row panel-body"> 
+	<div id="data1" class="col-sm-3"></div>
+    <div id="data2" class="col-sm-6"></div>
+	<div id="data3" class="col-sm-3 list-group well"></div>
+	</div>
+	 <div class="row panel-body"> 
+	<div id="data4" class="col-sm-12"></div>
+	</div>
+</div>
+  
+  <script type="text/javascript">
+$(function(){
+  $('#submitbtn').on('click', function(e){
+    $("#data1").empty();
+	 $("#data2").empty();
+	  $("#data3").empty();
+	   $("#data4").empty();
+        var username = $('#username').val();
+    var requri   = 'https://api.github.com/users/'+username;
+    var repouri  = 'https://api.github.com/users/'+username+'/repos';
+	//alert(requri);
+	//alert(username);
+	 $.ajax({
+      url: requri,
+	    dataType: "json",  
+
+      success: function(x) {
+      //  var y=jQuery.parseJSON(x);
+		//alert(x);
+		$("#data3").append('<h1>Links</h1>');
+		$.each(x,function(i,a){
+		   if(a!=undefined){
+		// alert(a+"</br>"+i);
+		 //$("#data").append('<b>'+i+'</b>:'+a+'</br>');
+		     if(i=="avatar_url")
+		 	      $("#data1").append('<img src=" '+a+'" class="img-responsive img-rounded img-thumbnail" alt="'+i+'"/><p class="caption">'+i+'</p></br>');
+		     else if(i=="gravatar_id"||i=="site_admin"){}	
+		     else if(i=="login" ||i=="id"||i=="type"||i=="public_repos"||i=="public_gists"||i=="followers"||i=="following"||i=="created_at"||i=="updated_at") 
+		          $("#data2").append('<span class="col-sm-5"><b>'+i+'</b>:<span class="badge">'+a+'</span></span><br/>');
+		     else 
+		          $("#data3").append('<a href=" '+a+'" class="list-item">'+i+'</a><br/>');
+		    }
+			
+		});
+      }
+    });
+	
+	
+	 $.ajax({
+      url: repouri,
+	    dataType: "json",  
+
+      success: function(x) {
+		//alert(x);
+		$("#data4").append('<h1>Repositories</h1>');
+		$.each(x,function(i,a){
+		   if(a!=undefined){
+		    //  alert(i);
+			 // alert(a.name);
+			   $("#data4").append('<a href=" '+a.html_url+'" class="btn btn-primary ">'+a.name+'</a>');
+		    }
+			
+		});
+      }
+    });
+	
+	});
+	});
+  
+  </script>
+</body>
+</html>
